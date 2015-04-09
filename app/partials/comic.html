@@ -1,0 +1,41 @@
+
+
+<div class="alert alert-danger" ng-show="load_error_text">
+	{{page_loading_error}}
+</div>
+
+<div  ng-repeat="portfolio in portfolios">
+	<!-- <img src="media/{{portfolio_name}}/thumb/{{portfolio.filename}}" /> -->
+<h2 class = "comic_title">{{portfolio.title}}</h2>
+	
+
+	<nav class="comic_nav">
+				<ul>
+					<li><a href="#/comic/0001">&#60;&#60; first</a></li>
+					<li><a href="#/comic/0002">&#60; prev</a></li>
+					<li><a href="#/comic/0003">next &#62;</a></li>
+					<li><a href="#/comic/0004">last &#62;&#62;</a></li>
+				</ul>
+	</nav>
+
+		<div class ="comic_content"><img src="comics/{{portfolio.filename}}" /></div>
+	
+	
+
+			<nav class="comic_nav">
+				<ul>
+					<li><a href="#/comic/0001">&#60;&#60; first</a></li>
+					<li><a href="#/comic/0002">&#60; prev</a></li>
+					<li><a href="#/comic/0003">next &#62;</a></li>
+					<li><a href="#/comic/0004">last &#62;&#62;</a></li>
+				</ul>
+			</nav>
+		<div class="tagwords"><p>tag words: {{portfolio.tagwords}}</p></div>
+<div class= "main_comic_text_content">	
+	<div class="posting_title"><p>{{portfolio.posttitle}}</p></div>
+	<p>{{portfolio.post}}</p>
+</div>
+</div>
+<!-- "/portfolio/:portfolio_name"
+:portfol
+io_name -->

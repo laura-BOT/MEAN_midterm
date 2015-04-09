@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="comicApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0">
+	<title>Spineless Adventures</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/angular.min.1.2.10.js"></script>
+	<script type="text/javascript" src="js/angular-route.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/controllers/comiccontroller.js"></script>
+	<script type="text/javascript" src="app/controllers/comicviewcontroller.js"></script>
+</head>
+<body>
+	<div class="main clearfix">
+	<nav class= "nav" ng-include="'app/partials/navigation.html'"></nav>
+	<ng-view></ng-view>
+
+	</div>	
+
+</body>
+
+</html>
